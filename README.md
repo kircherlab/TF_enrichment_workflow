@@ -8,9 +8,20 @@ This repository contains a snakemake workflow to calculate enrichment of transcr
 
 ## Usage
 
+### Open chromatin regions
+
+This workflow was used with the following data:
+
+- blood open chromatin regions: Corces et al (2016) Nat Genet. https://doi.org/10.1038/ng.3646
+- cancer open chromatin regions: Corces et al (2018) Science https://doi.org/10.1126/science.aav1898
+
+The data can be downloaded and preprocessed by exectuing the `download_data.sh` script.
+
+
 ### Transcription factors
 
 To use this workflow transcription factor data needs to be downloaded and added to the `transcriptionfactors/` folder. This worklow was designed and only used with the predicted TFBS of the JASPAR Core Collection. An instruction how to download them is written in the directory. 
+
 
 ### Input parameters
 
@@ -22,4 +33,3 @@ HEALTHY = "blood_mono_500"
 CANCER = "pancancer_COAD_500"
 #########################################
 ```
-
